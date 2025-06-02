@@ -1,231 +1,97 @@
-<!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PATO - Crypto Firefighter</title>
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PATO - The Crypto Firefighter</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://i.imgur.com/kTt2d80.png') no-repeat center center fixed;
+      background: url('https://raw.githubusercontent.com/callpato/patofirefighter/main/assets/pato_bg.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
       text-align: center;
-      padding: 40px;
-      backdrop-filter: blur(4px);
-    }
-    h1 {
-      font-size: 3.5em;
-      color: #ff9933;
-      text-shadow: 2px 2px 8px #000;
-      animation: flicker 1.5s infinite alternate;
-    }
-    @keyframes flicker {
-      from { opacity: 1; }
-      to { opacity: 0.7; }
-    }
-    img.logo {
-      width: 180px;
-      border-radius: 50%;
-      box-shadow: 0 0 30px #ff9933;
-      margin-top: 20px;
-    }
-    p.tagline {
-      font-size: 1.5em;
-      font-weight: bold;
-      color: #ffcc66;
-      text-shadow: 1px 1px 6px #000;
-      margin-top: 20px;
-    }
-    p {
-      font-size: 1.2em;
-      max-width: 700px;
-      margin: auto;
-      margin-top: 20px;
-      line-height: 1.8;
-      text-shadow: 1px 1px 6px #000;
-    }
-    .btn, .tweet-btn {
-      margin-top: 30px;
-      padding: 14px 28px;
-      background: #ff9933;
-      border: none;
-      color: black;
-      font-weight: bold;
-      border-radius: 10px;
-      cursor: pointer;
-      box-shadow: 0 0 10px #ffcc66;
-      transition: 0.3s;
-    }
-    .btn:hover, .tweet-btn:hover {
-      background: #ffaa33;
-      transform: scale(1.05);
-    }
-    .links {
-      margin-top: 50px;
-    }
-    .links a {
-      display: inline-block;
-      margin: 12px;
-      color: #ffcc66;
-      text-decoration: none;
-      font-weight: bold;
-      background: rgba(0,0,0,0.5);
-      padding: 10px 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px #ff9933;
-    }
-    .links a:hover {
-      background: rgba(255,255,255,0.2);
-    }
-    .section {
-      background: rgba(0,0,0,0.6);
-      padding: 30px;
-      margin-top: 50px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px #222;
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.8s ease;
-    }
-    .section.reveal {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .section h2 {
-      color: #ffaa33;
-      text-shadow: 1px 1px 6px #000;
-    }
-    .section ul {
-      text-align: left;
-      max-width: 700px;
-      margin: 20px auto;
-      padding-left: 20px;
-    }
-    .section li {
-      margin-bottom: 10px;
-      line-height: 1.6;
-    }
-    .fire-animation {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      width: 120px;
-      z-index: 9999;
-    }
-    form {
-      max-width: 600px;
-      margin: 30px auto;
-      text-align: left;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 16px;
-      border: none;
-      border-radius: 8px;
-    }
-    input[type=submit] {
-      background: #ffaa33;
-      font-weight: bold;
-      color: #000;
-      cursor: pointer;
-    }
-    input[type=submit]:hover {
-      background: #ffbb55;
-    }
-    iframe.nft {
-      width: 100%;
-      height: 500px;
-      border: none;
-      border-radius: 12px;
-      margin-top: 30px;
-    }
+    }.container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #ff9933;
+  animation: slidein 2s ease-out;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background: #ff9933;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ffaa33;
+}
+
+.section {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.section h2 {
+  color: #00ccff;
+}
+
+.roadmap ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.roadmap li {
+  padding: 10px 0;
+  font-size: 1.1em;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
   </style>
-  <script>
-    function tweetNow() {
-      const tweetText = encodeURIComponent("🔥 Check out $PATO – the firefighter frog saving #ZORA from the red! 🚒 patofirefighter.com");
-      window.open(`https://twitter.com/intent/tweet?text=${tweetText}`, '_blank');
-    }window.addEventListener('scroll', function () {
-  document.querySelectorAll('.section').forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100) {
-      el.classList.add('reveal');
-    }
-  });
-});
-
-  </script>
-</head>
-<body>
-  <h1>🔥 Welcome to PATO</h1>
-  <img src="https://i.imgur.com/kTt2d80.png" class="logo" alt="PATO the Crypto Firefighter">
-  <p class="tagline">🐸 The Frog That Fights the FUD – Meet PATO, The Meme Hero We Deserve!</p>
-  <p>
-    🚨 Token launched on Base Chain<br/>
-    🔥 Saving ZORA from the red<br/>
-    🎯 NFT Campaign: “PATO Saves ZORA”
-  </p><button class="tweet-btn" onclick="tweetNow()">🚀 Tweet Support for $PATO</button>
-
-  <div class="links">
-    <a href="https://patofirefighter.com">🌐 Website</a>
-    <a href="https://zora.co/patofirefighter">🧯 ZORA Profile</a>
-    <a href="https://baseswap.fi">🌉 BaseSwap</a>
-    <a href="https://aerodrome.finance">✈️ Aerodrome</a>
-    <a href="https://uniswap.org">🦄 Uniswap</a>
-  </div>  <div class="section">
-    <h2>🚧 Roadmap</h2>
-    <ul>
-      <li>✅ Website & Branding Launch</li>
-      <li>✅ Token Creation on Base</li>
-      <li>🔥 NFT Campaign on ZORA: "PATO Saves ZORA"</li>
-      <li>🌍 Listing on BaseSwap, Aerodrome & Uniswap</li>
-      <li>📣 Community Growth + Viral Meme Push</li>
-      <li>🎮 PATO-themed mini-game (in progress)</li>
-      <li>📱 Telegram, Twitter & Discord Expansion</li>
-      <li>🚀 CEX Listing (Phase 2)</li>
-    </ul>
-  </div>  <div class="section">
-    <h2>📝 Blog</h2>
-    <ul>
-      <li><strong>[New]</strong> “Why PATO chose ZORA to rescue” – coming soon</li>
-      <li>Behind the Meme: Birth of the Firefighter Frog 🔥</li>
-      <li>How to Participate in NFT Drops</li>
-      <li>Phase 2 Utilities – Tokenomics & Beyond</li>
-    </ul>
-  </div>  <div class="section">
-    <h2>📊 Token Stats</h2>
+</head><body>
+  <div class="container">
+    <h1>🔥 Welcome to PATO</h1>
+    <img src="https://raw.githubusercontent.com/callpato/patofirefighter/main/assets/pato_icon.png" width="180" alt="PATO" />
     <p>
-      🔗 Network: Base<br/>
-      🧮 Total Supply: 120,000,000,000 PATO<br/>
-      🧾 Contract: 0xb219204334F1ABAD08f52851eF6A45393c7239af
-    </p>
-  </div>  <div class="section">
-    <h2>🧠 Meet the Team</h2>
-    <ul>
-      <li>Chief Meme Engineer: <strong>SmokyToad</strong></li>
-      <li>Head of Fire: <strong>Captain Cope</strong></li>
-      <li>Community Hype Officer: <strong>FlameThrower420</strong></li>
-    </ul>
-  </div>  <div class="section">
-    <h2>🎨 NFT Gallery</h2>
-    <p>See PATO's heroic NFTs minted on ZORA:</p>
-    <iframe class="nft" src="https://zora.co/patofirefighter"></iframe>
-  </div>  <div class="section">
-    <h2>🎮 Game Teaser</h2>
-    <p>A PATO mini-game is in development – stay tuned for firefighting action!</p>
-    <img src="https://i.imgur.com/HBdh1Um.png" alt="PATO Game Teaser" style="max-width:100%; border-radius:12px; box-shadow:0 0 12px #ff9933;">
-  </div>  <div class="section">
-    <h2>📬 Contact Us</h2>
-    <form action="mailto:patofirefighter@gmail.com" method="POST" enctype="text/plain">
-      <label>Your Name:</label>
-      <input type="text" name="name" required>
-      <label>Your Email:</label>
-      <input type="email" name="email" required>
-      <label>Your Message:</label>
-      <textarea name="message" rows="5" required></textarea>
-      <input type="submit" value="Send Message">
-    </form>
-  </div>  <!-- 🔥 Fire Animation Bottom Right -->  <img src="https://i.imgur.com/QL6bVvE.gif" alt="Fire GIF" class="fire-animation">
-</body>
-</html>
+      PATO is the hero of the crypto world.<br />
+      When markets turn red, he comes to the rescue with a bucket of stablecoins!
+    </p><div class="section">
+  <h2>🔔 Token Launch</h2>
+  <p>Coming soon on Base & Zora networks.</p>
+</div>
+
+<div class="section roadmap">
+  <h2>🗺 Roadmap</h2>
+  <ul>
+    <li>✅ Website Launch</li>
+    <li>✅ NFT Campaign: "PATO Saves ZORA"</li>
+    <li>⚙️ Token Deployment</li>
+    <li>⚙️ Community Growth</li>
+    <li>⚙️ Listings on DEXs & CEXs</li>
+
+    
