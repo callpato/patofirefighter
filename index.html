@@ -1,97 +1,35 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html><html lang="en">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PATO - The Crypto Firefighter</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://raw.githubusercontent.com/callpato/patofirefighter/main/assets/pato_bg.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      text-align: center;
-    }.container {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 40px;
-}
-
-h1 {
-  font-size: 3em;
-  color: #ff9933;
-  animation: slidein 2s ease-out;
-}
-
-@keyframes slidein {
-  from {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.btn {
-  margin-top: 30px;
-  padding: 12px 24px;
-  background: #ff9933;
-  border: none;
-  color: black;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #ffaa33;
-}
-
-.section {
-  margin-top: 50px;
-  padding: 20px;
-}
-
-.section h2 {
-  color: #00ccff;
-}
-
-.roadmap ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.roadmap li {
-  padding: 10px 0;
-  font-size: 1.1em;
-}
-
-footer {
-  margin-top: 50px;
-  font-size: 0.9em;
-  color: #ccc;
-}
-
-  </style>
-</head><body>
-  <div class="container">
-    <h1>🔥 Welcome to PATO</h1>
-    <img src="https://raw.githubusercontent.com/callpato/patofirefighter/main/assets/pato_icon.png" width="180" alt="PATO" />
-    <p>
-      PATO is the hero of the crypto world.<br />
-      When markets turn red, he comes to the rescue with a bucket of stablecoins!
-    </p><div class="section">
-  <h2>🔔 Token Launch</h2>
-  <p>Coming soon on Base & Zora networks.</p>
+  <link rel="icon" href="/pato-icon.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <div class="min-h-screen flex flex-col items-center justify-center px-6 text-center">
+    <img src="/pato-logo.png" alt="PATO Logo" class="w-40 mb-6" onerror="this.style.display='none'"/>
+    <h1 class="text-4xl font-bold text-orange-400 mb-4">🔥 Welcome to PATO</h1>
+    <p class="text-lg max-w-xl text-gray-300 mb-8">
+      PATO is the hero of the crypto world. When markets turn red, he comes to the rescue with a bucket of stablecoins!
+    </p><div class="space-y-4">
+  <a href="https://baseswap.fi" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg">Buy on BaseSwap</a>
+  <a href="https://basescan.org/address/0xb219204334F1ABAD08f52851eF6A45393c7239af" target="_blank" class="block text-sm text-gray-400 underline">View Contract</a>
 </div>
 
-<div class="section roadmap">
-  <h2>🗺 Roadmap</h2>
-  <ul>
+<div class="mt-12 text-left w-full max-w-lg bg-gray-800 rounded-lg p-6 shadow-xl">
+  <h2 class="text-xl font-bold text-cyan-400 mb-4">📜 Roadmap</h2>
+  <ul class="space-y-2 text-sm">
     <li>✅ Website Launch</li>
     <li>✅ NFT Campaign: "PATO Saves ZORA"</li>
     <li>⚙️ Token Deployment</li>
     <li>⚙️ Community Growth</li>
     <li>⚙️ Listings on DEXs & CEXs</li>
+  </ul>
+</div>
 
-    
+<footer class="mt-12 text-gray-500 text-xs">© 2025 PATO. All rights reserved.</footer>
+
+  </div>
+</body>
+</html>
