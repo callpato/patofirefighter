@@ -1,120 +1,68 @@
-export default function Home() { return ( <main className="min-h-screen bg-gradient-to-br from-yellow-50 to-orange-100 text-gray-900 font-sans"> <section className="text-center py-20 px-6"> <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-sm"> PATO: The Crypto Firefighter </h1> <p className="text-xl md:text-2xl max-w-2xl mx-auto mb-8"> When markets burn red, <span className="font-bold">PATO</span> sprays dollars — not water. </p> <div className="flex flex-wrap justify-center gap-4"> <a href="https://basescan.org/token/0xb219204334F1ABAD08f52851eF6A45393c7239af" target="_blank" className="bg-black text-white px-6 py-3 rounded-2xl shadow hover:scale-105 transition"> View on BaseScan </a> <a href="https://baseswap.fi" target="_blank" className="bg-green-600 text-white px-6 py-3 rounded-2xl shadow hover:scale-105 transition"> Trade on BaseSwap </a> <a href="https://app.aerodrome.finance" target="_blank" className="bg-blue-600 text-white px-6 py-3 rounded-2xl shadow hover:scale-105 transition"> Trade on Aerodrome </a> <a href="#tokenomics" className="bg-yellow-500 text-black px-6 py-3 rounded-2xl shadow hover:scale-105 transition"> See Tokenomics </a> <a href="#whitepaper" className="bg-red-600 text-white px-6 py-3 rounded-2xl shadow hover:scale-105 transition"> Whitepaper </a> <a href="#nft" className="bg-purple-600 text-white px-6 py-3 rounded-2xl shadow hover:scale-105 transition"> NFT Gallery </a> </div> </section>
 
-<section id="token" className="bg-white py-16 px-6 text-center">
-    <h2 className="text-4xl font-bold mb-4">Token Information</h2>
-    <p className="text-lg">Symbol: <strong>PATO</strong></p>
-    <p className="text-lg">Network: <strong>Base</strong></p>
-    <p className="text-lg">Total Supply: <strong>120,000,000,000</strong></p>
-    <p className="text-lg">Verified on BaseScan: <strong>Yes</strong></p>
-  </section>
-
-  <section id="tokenomics" className="bg-orange-50 py-16 px-6">
-    <h2 className="text-4xl font-bold text-center mb-10">Tokenomics</h2>
-    <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-6 text-lg">
-      <div className="bg-white p-6 rounded-2xl shadow">
-        <h3 className="font-semibold text-xl mb-2">BaseSwap LP</h3>
-        <p>60B Tokens (50%)</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PATO – The Crypto Firefighter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <h1>PATO: The Crypto Firefighter 🚒</h1>
+      <p>When markets burn red, PATO sprays dollars — not water.</p>
+      <div class="buttons">
+        <a href="https://basescan.org/token/0xb219204334F1ABAD08f52851eF6A45393c7239af" target="_blank">View on BaseScan</a>
+        <a href="https://zora.co/coin/base:0x9c5b8d88fbbef4524cd89a050d9c98b2f376708c" target="_blank">NFT Gallery</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#whitepaper">Whitepaper</a>
       </div>
-      <div className="bg-white p-6 rounded-2xl shadow">
-        <h3 className="font-semibold text-xl mb-2">Aerodrome LP</h3>
-        <p>25B Tokens (20.8%)</p>
-      </div>
-      <div className="bg-white p-6 rounded-2xl shadow">
-        <h3 className="font-semibold text-xl mb-2">Dev Wallet</h3>
-        <p>5B Tokens (4.2%)</p>
-      </div>
-      <div className="bg-white p-6 rounded-2xl shadow">
-        <h3 className="font-semibold text-xl mb-2">Future Allocation</h3>
-        <p>30B Tokens (25%)</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section className="py-16 px-6 text-center">
-    <h2 className="text-4xl font-bold mb-4">Mission</h2>
-    <p className="text-xl max-w-2xl mx-auto">
-      PATO is not just a meme. He's the firefighter of the crypto world — spraying dollars to save dying projects.
-      When charts burn red, PATO shows up.
-    </p>
-  </section>
+    <section id="tokenomics">
+      <h2>📊 Tokenomics</h2>
+      <ul>
+        <li>💧 50% – BaseSwap LP</li>
+        <li>🛩️ 20.8% – Aerodrome LP</li>
+        <li>🧠 4.2% – Dev Wallet</li>
+        <li>🚀 25% – Future Growth</li>
+      </ul>
+    </section>
 
-  <section id="whitepaper" className="bg-white py-16 px-6 text-left max-w-4xl mx-auto">
-    <h2 className="text-4xl font-bold text-center mb-10">Whitepaper</h2>
+    <section id="whitepaper">
+      <h2>📄 Whitepaper</h2>
+      <h3>1. Introduction</h3>
+      <p>PATO is the crypto world’s firefighter — born from chaos, driven by memes. When projects burn and investors panic, PATO enters with a smile and a hose full of green.</p>
 
-    <h3 className="text-2xl font-semibold mb-2">1. Introduction</h3>
-    <p className="mb-6">
-      PATO is the crypto world’s firefighter — born from chaos, driven by memes. When projects burn and investors panic, PATO enters with a smile and a hose full of green.
-    </p>
+      <h3>2. Vision</h3>
+      <p>We believe the next bull run won’t be serious — it will be stupidly glorious.</p>
 
-    <h3 className="text-2xl font-semibold mb-2">2. Vision</h3>
-    <p className="mb-6">
-      We believe the next bull run won’t be serious — it will be stupidly glorious. PATO exists to lead the meme-force that saves the degen world from total meltdown.
-    </p>
+      <h3>3. Utility</h3>
+      <p>PATO’s primary utility is meme-powered morale. From NFTs to Twitter raids — PATO exists to entertain and unite.</p>
 
-    <h3 className="text-2xl font-semibold mb-2">3. Tokenomics</h3>
-    <p className="mb-2">Total Supply: 120,000,000,000 PATO</p>
-    <ul className="list-disc pl-6 mb-6">
-      <li>50% - Liquidity on BaseSwap</li>
-      <li>20.8% - Liquidity on Aerodrome</li>
-      <li>4.2% - Dev Wallet</li>
-      <li>25% - Future Growth</li>
-    </ul>
+      <h3>4. Roadmap</h3>
+      <ul>
+        <li>✅ Launch on BaseSwap</li>
+        <li>✅ Deploy on Aerodrome</li>
+        <li>🔄 NFT Collection: "PATO Saves ZORA"</li>
+        <li>📢 Meme Campaigns</li>
+      </ul>
+    </section>
 
-    <h3 className="text-2xl font-semibold mb-2">4. Utility</h3>
-    <p className="mb-6">
-      PATO’s primary utility is meme-powered morale. From NFTs to Twitter raids to surprise rescues of red-candle projects — PATO exists to entertain and unite.
-    </p>
-
-    <h3 className="text-2xl font-semibold mb-2">5. Roadmap</h3>
-    <ul className="list-disc pl-6 mb-6">
-      <li>✅ Launch on BaseSwap</li>
-      <li>✅ Deploy on Aerodrome</li>
-      <li>🔄 NFT Collection: "PATO Saves ZORA"</li>
-      <li>📢 Meme Campaigns on Crypto Twitter</li>
-      <li>🚒 Surprise Fire-Drill Drops</li>
-      <li>🌀 Potential meme-game integration</li>
-    </ul>
-
-    <h3 className="text-2xl font-semibold mb-2">6. Disclaimer</h3>
-    <p className="mb-6">
-      PATO is a meme project. It is not investment advice. It is not a security. It is a purple firefighter who sprays money. Don’t be dumb. Or do. We won’t stop you.
-    </p>
-  </section>
-
-  <section id="nft" className="bg-orange-100 py-16 px-6">
-    <h2 className="text-4xl font-bold text-center mb-10">NFT Gallery</h2>
-    <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-6 max-w-5xl mx-auto">
-      {[
-        {
-          title: "PATO Saves ZORA",
-          img: "/nft1.png",
-          link: "https://zora.co/coin/base:0x9c5b8d88fbbef4524cd89a050d9c98b2f376708c"
-        },
-        {
-          title: "PATO vs Red Candle",
-          img: "/nft2.png",
-          link: "https://zora.co/coin/base:0xeb9608f7ae27bea4bc75a74a9b4413b68a6e7df1"
-        }
-      ].map((nft, idx) => (
-        <a key={idx} href={nft.link} target="_blank" className="block bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
-          <img src={nft.img} alt={nft.title} className="w-full object-cover" />
-          <div className="p-4 text-center">
-            <p className="font-semibold">{nft.title}</p>
-          </div>
+    <section id="nfts">
+      <h2>🖼️ NFT Gallery</h2>
+      <div class="gallery">
+        <a href="https://zora.co/coin/base:0x9c5b8d88fbbef4524cd89a050d9c98b2f376708c" target="_blank">
+          <img src="nft1.png" alt="PATO NFT 1" />
+          <p>PATO Saves ZORA</p>
         </a>
-      ))}
-    </div>
-  </section>
-
-  <footer className="bg-black text-white py-10 px-6 text-center">
-    <p className="mb-4">Follow the mission:</p>
-    <div className="flex justify-center gap-6 text-lg font-medium">
-      <a href="https://twitter.com/patofirefighter" target="_blank" className="hover:text-yellow-400">Twitter</a>
-      <a href="mailto:patofirefighter@gmail.com" className="hover:text-yellow-400">Email</a>
-    </div>
-    <p className="mt-6 text-sm opacity-70">&copy; 2025 PATO Project. All rights reserved.</p>
-  </footer>
-</main>
-
-); }
-
+        <a href="https://zora.co/coin/base:0xeb9608f7ae27bea4bc75a74a9b4413b68a6e7df1" target="_blank">
+          <img src="nft2.png" alt="PATO NFT 2" />
+          <p>PATO vs Red Candle</p>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
