@@ -2,116 +2,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PATO: The Crypto Firefighter</title>
   <style>
     body {
-      background: url("pato-bg.webp") no-repeat center center fixed;
+      background-image: url('pato-bg.jpg');
       background-size: cover;
-      font-family: 'Comic Sans MS', sans-serif;
-      color: #fff;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
       padding: 20px;
-      max-width: 900px;
-      margin: auto;
-      position: relative;
-      z-index: 1;
-    }
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.45);
-      z-index: -1;
     }
     .logo {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .logo img {
-      width: 160px;
+      width: 100px;
       border-radius: 50%;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    .buttons {
-      text-align: center;
       margin-bottom: 20px;
-    }
-    .buttons a {
-      display: inline-block;
-      margin: 6px;
-      padding: 10px 14px;
-      background: #ffcc00;
-      color: #000;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .buttons img {
-      height: 16px;
-      vertical-align: middle;
-      margin-right: 5px;
-    }
-    .note {
-      font-size: 12px;
-      text-align: center;
-      color: #ccc;
-      margin-top: 4px;
     }
     .section {
-      background: rgba(0,0,0,0.4);
+      background-color: rgba(0, 0, 0, 0.6);
       padding: 20px;
       border-radius: 10px;
-      margin: 20px 0;
+      margin: 20px auto;
+      max-width: 700px;
     }
-    .nfts {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
+    .icons img {
+      width: 32px;
+      margin: 5px;
+      vertical-align: middle;
     }
-    .nfts img {
-      width: 280px;
-      border-radius: 12px;
+    .nft img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="logo">
-    <img src="pato-logo.webp" alt="PATO Logo">
-  </div>
-
+  <img src="pato-logo.jpg" alt="PATO Logo" class="logo" />
   <h1>PATO: The Crypto Firefighter</h1>
-  <p style="text-align:center;">When markets burn red, PATO sprays dollars — not water.</p>
-
-  <div class="buttons">
-    <a href="https://dexscreener.com/base/0x4beb94d65de2b1270db58fa486d4b0d0124df33b" target="_blank">
-      <img src="icons/dexscreener.png">Dexscreener
-    </a>
-    <a href="https://www.geckoterminal.com/base/pools/0x4beb94d65de2b1270db58fa486d4b0d0124df33b" target="_blank">
-      <img src="icons/geckoterminal.png">GeckoTerminal
-    </a>
-    <a href="https://baseswap.fi" target="_blank">
-      <img src="icons/baseswap.png">BaseSwap
-    </a>
-    <a href="https://aerodrome.finance/pools" target="_blank">
-      <img src="icons/aerodrome.png">Aerodrome
-    </a>
-    <a href="https://twitter.com/patofirefighter" target="_blank">
-      <img src="icons/x-twitter.png">Twitter
-    </a>
-    <a href="https://t.me/patofirefighter" target="_blank">
-      <img src="icons/telegram.png">Telegram Chat
-    </a>
-    <a href="https://t.me/patofirefighternews" target="_blank">
-      <img src="icons/telegram.png">Telegram News
-    </a>
-  </div>
+  <p>When markets burn red, PATO sprays dollars — not water.</p>
 
   <div class="section">
     <h2>Tokenomics</h2>
-    <ul>
+    <ul style="list-style: none; padding-left: 0;">
       <li>💧 50% – BaseSwap LP</li>
       <li>🚀 20.8% – Aerodrome LP</li>
       <li>🧠 4.2% – Dev Wallet</li>
@@ -122,28 +56,40 @@
   <div class="section">
     <h2>Whitepaper</h2>
     <h3>1. Introduction</h3>
-    <p>PATO is the crypto world’s firefighter — born from chaos, driven by memes.</p>
+    <p>PATO is the crypto world's firefighter — born from chaos, driven by memes.</p>
     <h3>2. Vision</h3>
     <p>The next bull run won’t be serious — it will be stupidly glorious.</p>
     <h3>3. Utility</h3>
     <p>PATO exists to entertain and unite. From NFTs to Twitter raids — he leads with memes and money.</p>
     <h3>4. Roadmap</h3>
-    <ul>
+    <ul style="list-style: none; padding-left: 0;">
       <li>✅ Launch on BaseSwap</li>
       <li>✅ Deploy on Aerodrome</li>
-      <li>🟦 NFT Collection</li>
-      <li>🟦 Meme Campaigns</li>
-      <li>🟦 DAO & Staking</li>
+      <li>🔄 NFT Collection (In Progress)</li>
+      <li>🧠 Meme Campaigns</li>
+      <li>🛠 DAO & Staking</li>
     </ul>
   </div>
 
-  <div class="section">
+  <div class="section nft">
     <h2>📸 Featured ZORA NFTs</h2>
-    <div class="nfts">
-      <img src="pato_saves_zora.png"><img src="pato_red_suit.png"><img src="pato_yellow_suit.png">
-    </div>
+    <a href="https://zora.co/coin/base:0x9c5b8d88fbbef4524cd89a050d9c98b2f376708c"><img src="pato-red.jpg" alt="NFT 1" /></a>
+    <a href="https://zora.co/coin/base:0xeb9608f7ae27bea4bc75a74a9b4413b68a6e7df1"><img src="pato-yellow.jpg" alt="NFT 2" /></a>
+    <a href="https://zora.co/coin/base:0xb1b0a0340841f43f823aee3648ae2a356183af3a"><img src="pato-zora.jpg" alt="NFT 3" /></a>
   </div>
 
-  <p style="text-align:center; margin-top:20px;">📩 Contact: <a href="mailto:patofirefighter@gmail.com" style="color:#fff;">patofirefighter@gmail.com</a></p>
+  <div class="section icons">
+    <h2>Links</h2>
+    <a href="https://dexscreener.com/base/0x4beb94d65de2b1270db58fa486d4b0d0124df33b"><img src="dexscreener.png" alt="Dexscreener" /></a>
+    <a href="https://www.geckoterminal.com/base/pools/0x4beb94d65de2b1270db58fa486d4b0d0124df33b"><img src="geckoterminal.png" alt="GeckoTerminal" /></a>
+    <a href="https://twitter.com/patofirefighter"><img src="x.png" alt="Twitter/X" /></a>
+    <a href="https://t.me/patofirefighter"><img src="telegram.png" alt="Telegram Chat" /></a>
+    <a href="https://t.me/patofirefighternews"><img src="telegram.png" alt="Telegram News" /></a>
+    <a href="https://aerodrome.finance"><img src="aerodrome.png" alt="Aerodrome" /></a>
+    <a href="https://baseswap.fi"><img src="baseswap.png" alt="BaseSwap" /></a>
+  </div>
+
+  <p style="color: white; font-size: 14px;">Contact: patofirefighter@gmail.com</p>
+  <p style="color: white; font-size: 14px;">Meme-powered by PARSPAK</p>
 </body>
 </html>
