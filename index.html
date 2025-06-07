@@ -1,127 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PATO | The Crypto Firefighter</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background: url('pato-bg.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 2rem;
-      border-radius: 1rem;
-    }
-    .section-title {
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-    }
-    .tokenomics-card {
-      background: rgba(255, 255, 255, 0.05);
-      border: none;
-    }
-    .nft-img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-    }
-    .icon-img {
-      width: 32px;
-      height: 32px;
-      margin-right: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>PATO: The Crypto Firefighter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container text-center mt-4">
-    <img src="pato-logo.jpg" alt="PATO Logo" width="140" class="mb-4">
-    <div class="overlay">
-      <h1 class="display-5">PATO</h1>
-      <p class="lead">The Meme-Powered Crypto Firefighter</p>
+    <header>
+        <img src="pato-logo.jpg" alt="PATO Logo" class="logo">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#tokenomics">Tokenomics</a>
+            <a href="#roadmap">Roadmap</a>
+            <a href="#nfts">NFTs</a>
+            <a href="#whitepaper">Whitepaper</a>
+            <a href="#links">Links</a>
+        </nav>
+    </header>
 
-      <h3 class="section-title">About PATO</h3>
-      <p>PATO is not just another meme token. He is a crypto firefighter born to save degens from red markets using dollar-fueled water hoses. With his iconic purple look, clumsy grin, and meme energy, PATO is the ultimate market savior.</p>
+    <section id="about">
+        <h1>About PATO</h1>
+        <p>PATO is not just another meme token. He is a crypto firefighter born to save degens from red markets using dollar-fueled water hoses. With his iconic purple look, clumsy grin, and meme energy, PATO is the ultimate market savior.</p>
+    </section>
 
-      <h3 class="section-title">Tokenomics</h3>
-      <div class="row g-3">
-        <div class="col-md-6">
-          <div class="card tokenomics-card p-3">
-            <strong>Total Supply:</strong> 120B<br>
-            50% – BaseSwap Liquidity<br>
-            <img src="baseswap.png" class="icon-img"> Contract: <code>0xb219...39af</code><br>
-            <small>Enter contract manually</small>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card tokenomics-card p-3">
-            20.8% – Aerodrome Liquidity<br>
-            <img src="aerodrome.png" class="icon-img"> Contract: <code>0xb219...39af</code><br>
-            <small>Enter contract manually</small>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card tokenomics-card p-3">
-            4.2% – Dev Wallet
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card tokenomics-card p-3">
-            25% – Growth and Campaigns
-          </div>
-        </div>
-      </div>
+    <section id="tokenomics">
+        <h1>Tokenomics</h1>
+        <p><strong>Total Supply:</strong> 120B</p>
+        <ul>
+            <li>💧 50% – BaseSwap Liquidity <br><small>Contract: 0xb219...39af (Enter manually)</small></li>
+            <li>🚀 20.8% – Aerodrome Liquidity <br><small>Contract: 0xb219...39af (Enter manually)</small></li>
+            <li>🧠 4.2% – Dev Wallet</li>
+            <li>📈 25% – Growth and Campaigns</li>
+        </ul>
+    </section>
 
-      <h3 class="section-title">Links</h3>
-      <div class="d-flex justify-content-center flex-wrap">
-        <a href="https://t.me/patofirefighter" class="btn btn-outline-warning m-2">
-          <img src="telegram.png" class="icon-img"> Telegram
-        </a>
-        <a href="https://t.me/patofirefighternews" class="btn btn-outline-warning m-2">
-          <img src="telegram.png" class="icon-img"> News Channel
-        </a>
-        <a href="#" class="btn btn-outline-info m-2">
-          <img src="x.png" class="icon-img"> Twitter/X
-        </a>
-        <a href="https://dexscreener.com/base/0x4beb94d65de2b1270db58fa486d4b0d0124df33b" class="btn btn-outline-light m-2">
-          <img src="dexscreener.png" class="icon-img"> DexScreener
-        </a>
-        <a href="https://www.geckoterminal.com/base/pools/0x4beb94d65de2b1270db58fa486d4b0d0124df33b" class="btn btn-outline-light m-2">
-          <img src="geckoterminal.png" class="icon-img"> GeckoTerminal
-        </a>
-      </div>
+    <section id="roadmap">
+        <h1>Roadmap</h1>
+        <ul>
+            <li>✅ Launch on BaseSwap</li>
+            <li>✅ Deploy on Aerodrome</li>
+            <li>🛠️ NFT Collection (In progress)</li>
+            <li>🧠 Meme Campaigns</li>
+            <li>🧱 DAO & Staking</li>
+        </ul>
+    </section>
 
-      <h3 class="section-title">NFTs on ZORA</h3>
-      <div class="row">
-        <div class="col-md-4">
-          <a href="https://zora.co/coin/base:0x9c5b8d88fbbef4524cd89a050d9c98b2f376708c">
-            <img src="pato-red.jpg" class="nft-img">
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a href="https://zora.co/coin/base:0xeb9608f7ae27bea4bc75a74a9b4413b68a6e7df1">
-            <img src="pato-yellow.jpg" class="nft-img">
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a href="https://zora.co/coin/base:0xb1b0a0340841f43f823aee3648ae2a356183af3a">
-            <img src="pato-zora.jpg" class="nft-img">
-          </a>
-        </div>
-      </div>
+    <section id="nfts">
+        <h1>NFTs on ZORA</h1>
+        <img src="pato-yellow.jpg" alt="PATO Yellow" class="nft">
+        <img src="pato-red.jpg" alt="PATO Red" class="nft">
+        <img src="pato-zora.jpg" alt="PATO ZORA" class="nft">
+    </section>
 
-      <h3 class="section-title">Whitepaper</h3>
-      <a href="PATO_Whitepaper.pdf" class="btn btn-outline-success" download>Download Whitepaper</a>
+    <section id="whitepaper">
+        <h1>Whitepaper</h1>
+        <p>PATO is burnable, community-driven and Meme-powered by PARSPAK.</p>
+        <a href="pato-whitepaper.pdf" download>Download Whitepaper</a>
+    </section>
 
-      <footer class="mt-5">
-        <p class="text-muted">Meme-powered by PARSPAK</p>
-      </footer>
-    </div>
-  </div>
+    <section id="links">
+        <h1>Links</h1>
+        <div class="links">
+            <a href="https://t.me/patochat"><img src="telegram.png" alt="Telegram"></a>
+            <a href="https://twitter.com/patofirefighter"><img src="x.png" alt="Twitter/X"></a>
+            <a href="https://dexscreener.com/base/0x4beb94d65de2b1270db58fa486d4b0d0124df33b"><img src="dexscreener.png" alt="Dexscreener"></a>
+            <a href="https://www.geckoterminal.com/base/pools/0x4beb94d65de2b1270db58fa486d4b0d0124df33b"><img src="geckoterminal.png" alt="GeckoTerminal"></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Meme-powered by PARSPAK</p>
+    </footer>
 </body>
 </html>
