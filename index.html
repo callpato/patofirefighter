@@ -2,138 +2,150 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PATO – The Crypto Firefighter</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-image: url('pato-bg.jpg');
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('pato-bg.jpg') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      color: white;
-      text-align: center;
+      color: #fff;
     }
 
-    .container {
-      background-color: rgba(0, 0, 0, 0.75);
-      padding: 30px 20px;
+    .wrapper {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
       max-width: 700px;
       margin: auto;
-      border-radius: 16px;
-      margin-top: 30px;
     }
 
-    img.logo {
-      width: 150px;
-      height: auto;
-      border-radius: 100px;
-      margin-bottom: 20px;
+    .logo {
+      display: block;
+      max-width: 140px;
+      margin: 0 auto 20px;
+      border-radius: 80px;
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 26px;
+      text-align: center;
       margin-bottom: 10px;
     }
 
     p {
-      font-size: 16px;
-      margin-bottom: 30px;
+      font-size: 15px;
+      text-align: center;
+      margin-bottom: 25px;
     }
 
     .btn {
       display: block;
-      margin: 10px auto;
-      padding: 12px 24px;
+      width: 100%;
+      margin: 10px 0;
+      padding: 14px;
       font-size: 16px;
       font-weight: bold;
-      border: none;
-      border-radius: 8px;
       background-color: orange;
-      color: black;
+      color: #000;
+      text-align: center;
+      border-radius: 10px;
       text-decoration: none;
-      transition: background-color 0.3s ease;
-      width: 80%;
-      max-width: 320px;
+      transition: 0.3s;
     }
 
     .btn:hover {
-      background-color: #ffa500;
+      background-color: #ffae00;
     }
 
     .section-title {
-      font-size: 24px;
       margin-top: 40px;
-      margin-bottom: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .nft-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
     }
 
     .nft-gallery img {
-      width: 100%;
-      max-width: 220px;
-      margin: 10px;
-      border-radius: 8px;
+      max-width: 100px;
+      border-radius: 10px;
       border: 2px solid #fff;
     }
 
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      gap: 12px;
+    }
+
     .social-icons img {
-      width: 40px;
-      margin: 8px;
-      vertical-align: middle;
+      width: 36px;
     }
 
     .footer {
+      font-size: 13px;
+      text-align: center;
       margin-top: 40px;
-      font-size: 14px;
       color: #aaa;
+    }
+
+    @media (min-width: 768px) {
+      .btn {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .nft-gallery img {
+        max-width: 140px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="wrapper">
     <img src="pato-logo.jpg" alt="PATO Logo" class="logo" />
-    <h1>Welcome to PATO – The Crypto Firefighter</h1>
-    <p>This site includes logo, background, NFTs, social links, and whitepaper.</p>
+    <h1>PATO – The Crypto Firefighter</h1>
+    <p>Rescuing the crypto world, one dollar splash at a time.</p>
 
     <a href="https://baseswap.fi" class="btn" target="_blank">
-      Buy on BaseSwap – Use contract: <br /> <small>0xb219204334F1ABAD08f52851eF6A45393c7239af</small>
+      Buy on BaseSwap<br><small>Use contract: 0xb219204334F1ABAD08f52851eF6A45393c7239af</small>
     </a>
 
     <a href="https://aerodrome.finance" class="btn" target="_blank">
-      Buy on Aerodrome – Use contract: <br /> <small>0xb219204334F1ABAD08f52851eF6A45393c7239af</small>
+      Buy on Aerodrome<br><small>Use contract: 0xb219204334F1ABAD08f52851eF6A45393c7239af</small>
     </a>
 
-    <a href="whitepaper_pato.html" class="btn" target="_blank">Whitepaper (HTML)</a>
-    <a href="whitepaper_pato.pdf" class="btn" target="_blank">Whitepaper (PDF)</a>
+    <a href="whitepaper_pato.html" class="btn" target="_blank">📄 Whitepaper (HTML)</a>
+    <a href="whitepaper_pato.pdf" class="btn" target="_blank">📄 Whitepaper (PDF)</a>
 
-    <h2 class="section-title">PATO NFT Gallery</h2>
+    <div class="section-title">🔥 PATO NFT Gallery</div>
     <div class="nft-gallery">
-      <img src="nft1.jpg" alt="NFT 1" />
-      <img src="nft2.jpg" alt="NFT 2" />
-      <img src="nft3.jpg" alt="NFT 3" />
+      <a href="https://zora.co/coin/base:0x9c5b8d88fbbef4524cd89a050d9c98b2f376708c"><img src="nft1.jpg" alt="NFT 1"></a>
+      <a href="https://zora.co/coin/base:0xeb9608f7ae27bea4bc75a74a9b4413b68a6e7df1"><img src="nft2.jpg" alt="NFT 2"></a>
+      <a href="https://zora.co/coin/base:0xb1b0a0340841f43f823aee3648ae2a356183af3a"><img src="nft3.jpg" alt="NFT 3"></a>
     </div>
 
-    <h2 class="section-title">Social & Tracking</h2>
+    <div class="section-title">🔗 Track & Social</div>
     <div class="social-icons">
-      <a href="https://dexscreener.com/base/0xb219204334F1ABAD08f52851eF6A45393c7239af" target="_blank">
-        <img src="icon-dexscreener.png" alt="Dexscreener" />
-      </a>
-      <a href="https://basescan.org/address/0xb219204334F1ABAD08f52851eF6A45393c7239af" target="_blank">
-        <img src="icon-basescan-alt.png" alt="Basescan" />
-      </a>
-      <a href="https://geckoterminal.com/base/pools/0x4beb94d65de2b1270db58fa486d4b0d0124df33b" target="_blank">
-        <img src="icon-geckoterminal.png" alt="GeckoTerminal" />
-      </a>
-      <a href="https://twitter.com/patofirefighter" target="_blank">
-        <img src="icon-x.png" alt="X (Twitter)" />
-      </a>
-      <a href="https://t.me/patofirefighter" target="_blank">
-        <img src="icon-telegram.png" alt="Telegram" />
-      </a>
+      <a href="https://dexscreener.com/base/0xb219204334F1ABAD08f52851eF6A45393c7239af"><img src="icon-dexscreener.png" alt="Dexscreener"></a>
+      <a href="https://geckoterminal.com/base/pools/0x4beb94d65de2b1270db58fa486d4b0d0124df33b"><img src="icon-geckoterminal.png" alt="GeckoTerminal"></a>
+      <a href="https://basescan.org/address/0xb219204334f1abad08f52851ef6a45393c7239af"><img src="icon-basescan-alt.png" alt="Basescan"></a>
+      <a href="https://twitter.com/patofirefighter"><img src="icon-x.png" alt="Twitter (X)"></a>
+      <a href="https://t.me/patofirefighter"><img src="icon-telegram.png" alt="Telegram"></a>
+      <a href="https://t.me/patofirefighternews"><img src="icon-telegram.png" alt="Telegram News"></a>
     </div>
 
     <div class="footer">
-      &copy; 2025 PATO Project. Meme-powered by PARSPAK.
+      &copy; 2025 PATO Project – Meme-powered by PARSPAK
     </div>
   </div>
 </body>
