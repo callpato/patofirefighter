@@ -1,8 +1,8 @@
-<!-- index.html --><!DOCTYPE html><html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PATO – The Crypto Firefighter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PATO - The Crypto Firefighter</title>
   <style>
     body {
       margin: 0;
@@ -14,116 +14,121 @@
     .container {
       background-color: rgba(0, 0, 0, 0.75);
       padding: 20px;
+      max-width: 100%;
       margin: auto;
       border-radius: 12px;
-      max-width: 800px;
     }
     .logo {
-      width: 140px;
+      width: 120px;
+      height: auto;
       display: block;
       margin: 20px auto;
     }
-    .nav {
+    nav {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
       margin-bottom: 20px;
     }
-    .nav a {
-      text-decoration: none;
-      padding: 10px 16px;
-      background-color: #ffaa00;
+    nav a {
+      background: #ffae00;
       color: #000;
+      padding: 10px 20px;
+      margin: 5px;
+      text-decoration: none;
       font-weight: bold;
-      border-radius: 8px;
-      transition: background 0.3s;
+      border-radius: 6px;
     }
-    .nav a:hover {
-      background-color: #ffc83d;
-    }
-    h1, p {
+    h1, h2 {
       text-align: center;
     }
-    .section {
-      margin-top: 30px;
-    }
-    .nft-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 15px;
-    }
-    .nft-grid img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    .btn-buy {
+    .btn {
       display: block;
-      width: 100%;
-      margin: 10px 0;
+      width: 90%;
+      max-width: 320px;
+      margin: 10px auto;
       padding: 14px;
-      font-size: 16px;
-      background-color: #00ffcc;
-      color: #000;
-      font-weight: bold;
+      font-size: 15px;
       border: none;
       border-radius: 8px;
-      text-align: center;
+      background-color: #ffae00;
+      color: #000;
+      font-weight: bold;
       text-decoration: none;
+      transition: 0.3s ease;
+      text-align: center;
     }
-    @media(min-width: 600px) {
-      .nft-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
+    .btn:hover {
+      background-color: #ffc83d;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+    }
+    .nft-gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .nft-gallery img {
+      max-width: 90%;
+      border-radius: 12px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #bbb;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="pato-logo.png" alt="PATO Logo" class="logo"><div class="nav">
+    <img src="logo.png" alt="PATO Logo" class="logo"><nav>
   <a href="index.html">Home</a>
   <a href="roadmap.html">Roadmap</a>
   <a href="tokenomics.html">Tokenomics</a>
   <a href="whitepaper_pato.html">Whitepaper</a>
+</nav>
+
+<h1>PATO – The Crypto Firefighter</h1>
+<p>Meme-powered by PARSPAK</p>
+
+<a class="btn" href="https://baseswap.fi">Buy on BaseSwap (Enter contract manually)</a>
+<a class="btn" href="https://aerodrome.finance">Buy on Aerodrome (Enter contract manually)</a>
+
+<div class="nft-gallery">
+  <h2>PATO NFTs on Zora</h2>
+  <a href="https://zora.co/coin/base:0x9c5b8d88fbbef4524cd89a050d9c98b2f376708c">
+    <img src="nft1.jpg" alt="NFT 1">
+  </a>
+  <a href="https://zora.co/coin/base:0xeb9608f7ae27bea4bc75a74a9b4413b68a6e7df1">
+    <img src="nft2.jpg" alt="NFT 2">
+  </a>
+  <a href="https://zora.co/coin/base:0xb1b0a0340841f43f823aee3648ae2a356183af3a">
+    <img src="nft3.jpg" alt="NFT 3">
+  </a>
 </div>
 
-<h1>Welcome to PATO – The Crypto Firefighter</h1>
-<p>$PATO is a meme hero that fights bearish markets and saves dying projects – powered by community fire.</p>
-
-<a href="https://baseswap.fi" class="btn-buy">Buy on BaseSwap (enter contract manually)</a>
-<a href="https://app.aerodrome.finance" class="btn-buy">Buy on Aerodrome (enter contract manually)</a>
-
-<div class="section">
-  <h2>NFT Collection on Zora</h2>
-  <div class="nft-grid">
-    <a href="https://zora.co/coin/base:0x9c5b8d88fbbef4524cd89a050d9c98b2f376708c" target="_blank">
-      <img src="nft1.jpg" alt="NFT 1">
-    </a>
-    <a href="https://zora.co/coin/base:0xeb9608f7ae27bea4bc75a74a9b4413b68a6e7df1" target="_blank">
-      <img src="nft2.jpg" alt="NFT 2">
-    </a>
-    <a href="https://zora.co/coin/base:0xb1b0a0340841f43f823aee3648ae2a356183af3a" target="_blank">
-      <img src="nft3.jpg" alt="NFT 3">
-    </a>
-  </div>
+<div class="social-icons">
+  <a href="https://twitter.com/patofirefighter"><img src="icon-x.png" alt="X"></a>
+  <a href="https://t.me/patofirefighter"><img src="icon-telegram.png" alt="Telegram"></a>
+  <a href="https://t.me/patofirefighternews"><img src="icon-telegram.png" alt="Telegram News"></a>
+  <a href="https://dexscreener.com/base/0x4beb94d65de2b1270db58fa486d4b0d0124df33b"><img src="icon-dexscreener.png" alt="Dexscreener"></a>
+  <a href="https://www.geckoterminal.com/base/pools/0x4beb94d65de2b1270db58fa486d4b0d0124df33b"><img src="icon-geckoterminal.png" alt="Gecko Terminal"></a>
+  <a href="https://basescan.org/address/0xb219204334f1abad08f52851ef6a45393c7239af"><img src="icon-basescan.png" alt="BaseScan"></a>
 </div>
 
-<div class="section">
-  <h2>Socials</h2>
-  <p>
-    <a href="https://t.me/patofirefighter" style="color: #00ffff;">Telegram</a> |
-    <a href="https://t.me/patofirefighternews" style="color: #00ffff;">News</a> |
-    <a href="https://x.com/patofirefighter" style="color: #00ffff;">X (Twitter)</a>
-  </p>
-  <p>
-    <a href="https://dexscreener.com/base/0x4beb94d65de2b1270db58fa486d4b0d0124df33b">DexScreener</a> |
-    <a href="https://www.geckoterminal.com/base/pools/0x4beb94d65de2b1270db58fa486d4b0d0124df33b">GeckoTerminal</a> |
-    <a href="https://basescan.org/address/0xb219204334F1ABAD08f52851eF6A45393c7239af">BaseScan</a>
-  </p>
-</div>
-
-<footer style="text-align:center; margin-top: 30px; font-size: 13px;">
-  Meme-powered by PARSPAK
+<footer>
+  &copy; 2025 PATO Project | Built with love on Base
 </footer>
 
   </div>
