@@ -1,93 +1,110 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PATO - The Crypto Firefighter</title>
   <style>
     body {
+      background-color: #0f0f0f;
+      color: white;
       font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #fff;
+      text-align: center;
       margin: 0;
       padding: 0;
-      text-align: center;
     }
     header {
       padding: 20px;
     }
     nav {
-      margin: 20px 0;
+      margin-top: 20px;
     }
     nav a {
-      margin: 10px;
-      padding: 12px 24px;
-      background-color: #ffcc00;
-      color: black;
+      margin: 0 10px;
       text-decoration: none;
-      border-radius: 12px;
+      color: #fff;
       font-weight: bold;
     }
-    section {
-      margin: 30px auto;
-      width: 90%;
-      max-width: 900px;
+    .section {
+      padding: 40px 20px;
     }
     img.icon {
       width: 40px;
-      margin: 8px;
+      height: 40px;
+      margin: 10px;
     }
-    .nft {
-      max-width: 300px;
-      margin: 12px;
-      border: 3px solid #fff;
-      border-radius: 10px;
+    img.logo {
+      width: 160px;
+      height: auto;
+    }
+    .nft-gallery img {
+      width: 220px;
+      margin: 10px;
+      border-radius: 12px;
+    }
+    .btn {
+      background: #ffcc00;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #ffaa00;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="pato-logo.jpg" alt="PATO Logo" width="150" />
-    <h1>PATO - The Crypto Firefighter</h1>
-    <p>Meme-powered by PARSPAK</p>
-  </header>
-
-  <nav>
-    <a href="https://www.geckoterminal.com/base/pools/0x4beb94d65de2b1270db58fa486d4b0d0124df33b">Gecko Terminal</a>
-    <a href="https://basescan.org/address/0xb219204334f1abad08f52851ef6a45393c7239af">BaseScan</a>
+    <img src="pato-logo.jpg" alt="PATO Logo" class="logo" />
+    <h1>Welcome to PATO - The Crypto Firefighter</h1>
+    <p>Burning charts. Spraying dollars. Saving ZORA.</p>
+  </header>  <nav>
+    <a href="#about">About</a>
+    <a href="#tokenomics">Tokenomics</a>
+    <a href="#roadmap">Roadmap</a>
     <a href="whitepaper_pato.pdf">Whitepaper</a>
-  </nav>
-
-  <section>
-    <h2>About</h2>
-    <p>PATO is a meme-powered crypto firefighter. Whenever the market is in flames, PATO saves the day by spraying dollar bills instead of water!</p>
-  </section>
-
-  <section>
+  </nav>  <section id="about" class="section">
+    <h2>About PATO</h2>
+    <p>
+      PATO is your meme-powered crypto firefighter — a chaotic but heroic savior during market meltdowns. With a hose full of dollars and a heart full of memes, he pumps liquidity into the fire and rescues your favorite bags.
+    </p>
+    <p><strong>Meme-powered by PARSPAK.</strong></p>
+  </section>  <section id="tokenomics" class="section">
     <h2>Tokenomics</h2>
-    <p>Total Supply: 120,000,000,000 PATO</p>
-    <ul>
-      <li>50% - BaseSwap</li>
-      <li>20.8% - Aerodrome</li>
-      <li>4.2% - Dev Wallet</li>
-      <li>Remaining - Community & Campaigns</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>NFT Gallery</h2>
-    <img class="nft" src="nft1.jpg" alt="NFT 1" />
-    <img class="nft" src="nft2.jpg" alt="NFT 2" />
-    <img class="nft" src="nft3.jpg" alt="NFT 3" />
-  </section>
-
-  <section>
-    <h2>Connect</h2>
-    <a href="https://t.me/patofirefighter"><img src="icon-telegram.png" class="icon" alt="Telegram" /></a>
-    <a href="https://t.me/patofirefighternews"><img src="icon-telegram.png" class="icon" alt="Telegram News" /></a>
-    <a href="https://x.com/patofirefighter"><img src="icon-x.png" class="icon" alt="X" /></a>
-  </section>
-
+    <p>🔸 Total Supply: 120,000,000,000 PATO</p>
+    <p>🔸 BaseSwap: 60,000,000,000</p>
+    <p>🔸 Aerodrome: 25,000,000,000</p>
+    <p>🔸 Dev Wallet: 5,000,000,000</p>
+    <p>🔥 Burnable Token</p>
+  </section>  <section id="roadmap" class="section">
+    <h2>Roadmap</h2>
+    <p>✅ Launch on BaseSwap</p>
+    <p>✅ Launch on Aerodrome</p>
+    <p>🔄 NFT Collection – In Progress</p>
+    <p>📄 Whitepaper</p>
+    <p>📣 Listings & Marketing</p>
+  </section>  <section class="section">
+    <h2>Our NFT Gallery</h2>
+    <div class="nft-gallery">
+      <img src="nft1.jpg" alt="NFT 1" />
+      <img src="nft2.jpg" alt="NFT 2" />
+      <img src="nft3.jpg" alt="NFT 3" />
+    </div>
+  </section>  <section class="section">
+    <h2>Links & Socials</h2>
+    <a href="https://basescan.org/address/0xb219204334f1abad08f52851ef6a45393c7239af"><img src="icon-basescan-alt.png" class="icon" alt="BaseScan"></a>
+    <a href="https://www.geckoterminal.com/base/pools/0x4beb94d65de2b1270db58fa486d4b0d0124df33b"><img src="icon-geckoterminal.png" class="icon" alt="GeckoTerminal"></a>
+    <a href="https://dexscreener.com/base/0x4beb94d65de2b1270db58fa486d4b0d0124df33b"><img src="icon-dexscreener.png" class="icon" alt="Dexscreener"></a>
+    <a href="https://www.dextools.io"><img src="icon-dextools-alt.png" class="icon" alt="Dextools"></a>
+    <a href="https://baseswap.fi"><img src="icon-baseswap.png" class="icon" alt="BaseSwap"></a>
+    <a href="https://aerodrome.finance"><img src="icon-aerodrom.png" class="icon" alt="Aerodrome"></a>
+    <a href="https://x.com/patofirefighter"><img src="icon-x.png" class="icon" alt="Twitter X"></a>
+    <a href="https://t.me/patofirefighter"><img src="icon-telegram.png" class="icon" alt="Telegram"></a>
+    <a href="https://t.me/patofirefighternews"><img src="icon-telegram.png" class="icon" alt="Telegram News"></a>
+  </section>  <footer class="section">
+    <p>© 2025 PATO. Meme-powered by PARSPAK.</p>
+  </footer>
 </body>
 </html>
