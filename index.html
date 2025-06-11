@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -6,191 +7,214 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
+      background-color: #111;
       color: white;
+      margin: 0;
+      padding: 20px;
       text-align: center;
       background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
       overflow-x: hidden;
-    }body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.4);
-  z-index: 0;
-  pointer-events: none;
-}
+    }
 
-.fire-effect {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  background-image: repeating-linear-gradient(
-    180deg,
-    rgba(255, 0, 0, 0.2),
-    rgba(255, 140, 0, 0.2) 10%,
-    rgba(255, 255, 0, 0.1) 20%
-  );
-  animation: flames 2s infinite ease-in-out;
-  z-index: 1;
-}
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(255, 69, 0, 0.3) 10%, transparent 70%),
+                  rgba(0,0,0,0.4);
+      z-index: 0;
+      pointer-events: none;
+    }
 
-@keyframes flames {
-  0%, 100% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 0.8;
-  }
-}
+    .fire-effect {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background-image: repeating-linear-gradient(
+        180deg,
+        rgba(255, 0, 0, 0.2),
+        rgba(255, 140, 0, 0.2) 10%,
+        rgba(255, 255, 0, 0.1) 20%
+      );
+      animation: flames 2s infinite ease-in-out;
+      z-index: 1;
+    }
 
-.wave-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02) 10%, transparent 80%);
-  animation: wave 5s infinite ease-in-out;
-}
+    @keyframes flames {
+      0%, 100% {
+        opacity: 0.5;
+      }
+      50% {
+        opacity: 0.8;
+      }
+    }
 
-@keyframes wave {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 0.1;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 0.2;
-  }
-}
+    .wave-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+      background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02) 10%, transparent 80%);
+      animation: wave 5s infinite ease-in-out;
+    }
 
-.particles {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1;
-}
+    @keyframes wave {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 0.1;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 0.2;
+      }
+    }
 
-.particle {
-  position: absolute;
-  width: 3px;
-  height: 3px;
-  background: white;
-  border-radius: 50%;
-  animation: float 10s linear infinite;
-  opacity: 0.6;
-}
+    .particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
 
-@keyframes float {
-  0% {
-    transform: translateY(100vh) scale(0.5);
-  }
-  100% {
-    transform: translateY(-10vh) scale(1);
-    opacity: 0;
-  }
-}
+    .particle {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background: white;
+      border-radius: 50%;
+      animation: float 10s linear infinite;
+      opacity: 0.6;
+    }
 
-header {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  border-radius: 10px;
-  position: relative;
-  z-index: 2;
-}
-h1 {
-  margin: 0;
-}
-.subtitle {
-  font-style: italic;
-  color: #ccc;
-}
-nav {
-  margin: 20px 0;
-  position: relative;
-  z-index: 2;
-}
-nav a {
-  background: orange;
-  color: black;
-  padding: 10px 20px;
-  margin: 5px;
-  display: inline-block;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-.section {
-  max-width: 900px;
-  margin: 40px auto;
-  position: relative;
-  z-index: 2;
-}
-.buy-section {
-  background: yellow;
-  color: black;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-.nft-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-.nft-card {
-  background: #222;
-  padding: 10px;
-  border-radius: 10px;
-}
-.nft-card img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-.nft-card a {
-  display: block;
-  color: cyan;
-  text-decoration: none;
-  margin-top: 10px;
-  font-weight: bold;
-}
-.socials img {
-  width: 40px;
-  margin: 10px;
-}
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) scale(0.5);
+      }
+      100% {
+        transform: translateY(-10vh) scale(1);
+        opacity: 0;
+      }
+    }
 
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+      z-index: 2;
+    }
+    h1 {
+      margin: 0;
+    }
+    .subtitle {
+      font-style: italic;
+      color: #ccc;
+    }
+    nav {
+      margin: 20px 0;
+      position: relative;
+      z-index: 2;
+    }
+    nav a {
+      background: orange;
+      color: black;
+      padding: 10px 20px;
+      margin: 5px;
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .section {
+      max-width: 900px;
+      margin: 40px auto;
+      position: relative;
+      z-index: 2;
+    }
+    .buy-section {
+      background: yellow;
+      color: black;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .nft-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .nft-card {
+      background: #222;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .nft-card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .nft-card a {
+      display: block;
+      color: cyan;
+      text-decoration: none;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .socials img {
+      width: 40px;
+      margin: 10px;
+    }
   </style>
 </head>
 <body>
   <div class="fire-effect"></div>
   <div class="wave-overlay"></div>
-  <div class="particles"></div>  <header>
+  <div class="particles">
+    <!-- 40 particles randomly positioned -->
+    <script>
+      for (let i = 0; i < 40; i++) {
+        const dot = document.createElement('div');
+        dot.className = 'particle';
+        dot.style.left = Math.random() * 100 + '%';
+        dot.style.top = Math.random() * 100 + '%';
+        dot.style.animationDuration = (5 + Math.random() * 10) + 's';
+        dot.style.opacity = Math.random() * 0.6 + 0.2;
+        document.body.querySelector('.particles').appendChild(dot);
+      }
+    </script>
+  </div>
+
+  <header>
     <img src="pato-logo.jpg" alt="PATO Logo" width="100" />
     <h1>PATO - The Crypto Firefighter</h1>
     <p class="subtitle">Meme-powered by PARSPAK</p>
-    <nav>
-      <a href="#tokenomics">Tokenomics</a>
-      <a href="#roadmap">Roadmap</a>
-      <a href="whitepaper_pato.html">Whitepaper (HTML)</a>
-      <a href="whitepaper_pato.pdf">Whitepaper (PDF)</a>
-    </nav>
-  </header>  <div class="buy-section">
+  </header>
+  <nav>
+    <a href="#tokenomics">Tokenomics</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="whitepaper_pato.html">Whitepaper (HTML)</a>
+    <a href="whitepaper_pato.pdf">Whitepaper (PDF)</a>
+  </nav>
+
+  <div class="buy-section">
     <p>Buy on BaseSwap<br><small>Enter contract manually:</small><br><code>0xb219204334F1ABAD08f52851eF6A45393c7239af</code></p>
   </div>
   <div class="buy-section">
     <p>Buy on Aerodrome<br><small>Enter contract manually:</small><br><code>0xb219204334F1ABAD08f52851eF6A45393c7239af</code></p>
-  </div>  <div class="section" id="tokenomics">
+  </div>
+
+  <div class="section" id="tokenomics">
     <h2>Tokenomics</h2>
     <ul>
       <li>💧 60B PATO on BaseSwap (50%)</li>
@@ -199,6 +223,7 @@ nav a {
       <li>🔓 Remaining for future use, burns, and campaigns</li>
     </ul>
   </div>
+
   <div class="section" id="roadmap">
     <h2>Roadmap</h2>
     <ol>
@@ -209,6 +234,7 @@ nav a {
       <li>🔥 Partnerships and ecosystem integrations</li>
     </ol>
   </div>
+
   <div class="section">
     <h2>PATO NFT Gallery</h2>
     <div class="nft-gallery">
@@ -224,15 +250,39 @@ nav a {
           NFT #2
         </a>
       </div>
-      <!-- Continue other NFTs similarly -->
+      <div class="nft-card">
+        <a href="https://zora.co/coin/base:0xd7f7a6142f4e19834c0d8f717345989666a7858c" target="_blank">
+          <img src="pato3.jpg" alt="PATO NFT 3" />
+          NFT #3
+        </a>
+      </div>
+      <div class="nft-card">
+        <a href="https://zora.co/coin/base:0xf15258763ab319f281acc891ebb2aa3167df94f6" target="_blank">
+          <img src="pato4.jpg" alt="PATO NFT 4" />
+          NFT #4
+        </a>
+      </div>
+      <div class="nft-card">
+        <a href="https://zora.co/coin/base:0x5f0f52e1e8e1dbf389e09ed0d876adcac04176fa" target="_blank">
+          <img src="pato5.jpg" alt="PATO NFT 5" />
+          NFT #5
+        </a>
+      </div>
+      <div class="nft-card">
+        <a href="https://zora.co/coin/base:0x9f818c4c61cf5f62434cc62d5291f32e94178bd6" target="_blank">
+          <img src="pato6.jpg" alt="PATO NFT 6" />
+          NFT #6
+        </a>
+      </div>
     </div>
   </div>
+
   <div class="section socials">
     <h2>Social Links</h2>
     <a href="https://x.com/patofirefighter" target="_blank"><img src="icon-x.png" alt="X" /></a>
     <a href="https://t.me/patofirefighter" target="_blank"><img src="icon-telegram.png" alt="Telegram" /></a>
     <a href="https://t.me/patofirefighternews" target="_blank"><img src="icon-telegram.png" alt="Telegram News" /></a>
-    <a href="https://dexscreener.com/base/0x4beb94d65de2b1270db58fa486d4b0d0124df33b" target="_blank"><img src="icon-dexscreener.png" alt="Dexscreener" /></a>
+    <a href="https://dexscreener.com" target="_blank"><img src="icon-dexscreener.png" alt="Dexscreener" /></a>
     <a href="https://www.geckoterminal.com/base/pools/0x4beb94d65de2b1270db58fa486d4b0d0124df33b" target="_blank"><img src="icon-geckoterminal.png" alt="GeckoTerminal" /></a>
     <a href="https://basescan.org/address/0xb219204334f1abad08f52851ef6a45393c7239af" target="_blank"><img src="icon-basescan-alt.png" alt="BaseScan" /></a>
   </div>
